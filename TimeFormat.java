@@ -18,14 +18,17 @@ public class TimeFormat {
 		// Does the same with the minutes part of the input.
 		String minutes;
         // Replace this comment with the rest of your code
-		Scanner Scan1 = new Scanner(System.in);
 		String hourinput = args[0];
 		hours = Integer.parseInt(hourinput.substring(0,2));
 		minutes =hourinput.substring(3,5);
 		if(hours>12) {
 			System.out.println(hours-12 + ":" + minutes + " PM");
 		} else {
-			System.out.println(hours + ":" + minutes + " AM");
+			if (hours==12 && minutes!="00") {
+				System.out.println(hours + ":" + minutes + " PM");
+			} else {
+				System.out.println(hours + ":" + minutes + " AM");
+			}
 		}
 	}
 }

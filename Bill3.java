@@ -9,6 +9,6 @@ public class Bill3 {
 		String name03 = args[2];
 	    int billamount01 = Integer.parseInt(args[3]);
 		double billamount02 = Math.ceil((billamount01/3.0));
-		System.out.println("Dear "+ name01 + ", " + name02 + ", and " + name03 + ": pay " + billamount02 + " Shekeles each");
+		System.out.println("Dear "+ name03 + ", " + name02 + ", and " + name01 + ": pay " + billamount02 + " Shekels each");
 	}
 }
